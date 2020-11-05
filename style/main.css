@@ -1,0 +1,140 @@
+/* Elementos base */
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Navegação */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--vermelho);
+    font-size: 50px;
+}
+
+header nav {
+    float: right;
+    padding: 20px;
+}
+header nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/* Filme principal*/
+.filme-principal {
+    height: 420px;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url('https://image.tmdb.org/t/p/original/mmprryb2r0X8u9JkZCnaJIzyYX4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal h2 {
+    color: var(--vermelho);
+}
+
+.filme-principal p {
+    color: white;
+    text-align: justify;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+    transition: 1.5s;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.visto {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 90%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.owl-dots {
+    margin: 10px;
+}
+
+footer p {
+    border-top: 1px solid rgb(131, 129, 129);
+    color: white;
+    padding: 60px 20px 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+
